@@ -29,7 +29,7 @@
   "devDependencies": {
     "autoprefixer": "^6.5.3",
     "browser-sync": "^2.18.2",
-    "cssnano": "^3.8.0",
+    "cssnano": "^3.8.1",
     "gulp": "^3.9.1",
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-jade": "^1.1.0",
