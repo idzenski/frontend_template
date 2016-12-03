@@ -1,0 +1,42 @@
+{
+  "name": "gmdjs",
+  "version": "0.2.0",
+  "description": "Grid Material Design JS",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GriNAME/gmdjs.git"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "postcss",
+    "sass",
+    "template",
+    "gulp",
+    "adaptive",
+    "framework",
+    "matetial",
+    "javascript"
+  ],
+  "author": "GriNAME",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GriNAME/gmdjs/issues"
+  },
+  "homepage": "https://github.com/GriNAME/gmdjs#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "browser-sync": "^2.18.2",
+    "cssnano": "^3.8.0",
+    "gulp": "^3.9.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "node-bourbon": "^4.2.8",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-font-magician": "^1.5.0"
+  }
+}

@@ -1,0 +1,20 @@
+=media-xl($direction: min)
+	@media screen and (#{$direction}-width: $xl)
+		@content
+
+=media-lg($direction: min)
+	@media screen and (#{$direction}-width: $lg)
+		@content
+
+=media-md($direction: min)
+	@media screen and (#{$direction}-width: $md)
+		@content
+
+=media-sm($direction: min)
+	@media screen and (#{$direction}-width: $sm)
+		@content
+
+=media-xs($direction: max)
+	@media screen and (#{$direction}-width: $xs)
+		@content
+

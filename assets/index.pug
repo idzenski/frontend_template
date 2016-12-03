@@ -1,0 +1,14 @@
+doctype html
+html(lang='ru')
+  include pug/head.jade
+  body
+    // mixins
+    include libs/bemto/bemto.jade
+    include pug/header.jade
+    include pug/footer.jade
+
+    // Load Your Scripts Start
+    link(rel='stylesheet', href='css/libs.css')
+    script(src='libs/jquery/jquery-3.1.1.min.js')
+    script(src='libs/jquery/jquery-migrate-3.0.0.min.js')
+    script(src='js/common.js')
