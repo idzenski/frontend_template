@@ -1,0 +1,27 @@
+.header
+	position: relative
+	color: $primary-color-text $divider-color
+	background: url(../../img/header/slide-1.jpg) center
+	background-size: cover
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $primary-text-color
+		opacity: .8
+
+	&__top-line
+		+grid()
+		+align(start, center)
+		position: relative
+		padding-top: $distance-middle
+		+border-small()
+	&__logo
+		+col()
+
+	&__menu
+		+col()
+		+offset(auto, right)

@@ -10,6 +10,17 @@
 	@else if ($justify-content == center)
 		justify-content: center
 
+	@if ($align-items == start)
+		align-items: flex-start
+	@else if ($align-items == end)
+		align-items: flex-end
+	@else if ($align-items == stretch)
+		align-items: stretch
+	@else if ($align-items == baseline)
+		align-items: baseline
+	@else if ($align-items == center)
+		align-items: center
+
 =align-xl($justify-content: start, $align-items: stretch, $direction: min)
 	@media screen and (#{$direction}-width: $xl)
 		@if ($justify-content == start)

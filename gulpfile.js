@@ -4,11 +4,13 @@ let browserSync   = require('browser-sync'),
 		postcss       = require('gulp-postcss'),
 		autoprefixer  = require('autoprefixer'),
 		cssnano       = require('cssnano'),
+		short         = require('postcss-short'),
 		fonts         = require('postcss-font-magician'),
 
 		jade					= require('gulp-jade'),
 		media         = require('gulp-group-css-media-queries'),
 		sass          = require('gulp-sass'),
+		notify        = require('gulp-notify'),
 		bourbon       = require('node-bourbon');
 
 gulp.task('browserSync', function () {
@@ -18,19 +20,19 @@ gulp.task('browserSync', function () {
 		},
 		notify: false
 	});
-	// TODO: look at up
 });
 
 gulp.task('postcss', function () {
 	const processor = ([
 			autoprefixer({browsers: ['last 10 version']}),
 			cssnano(),
+			short(),
 			fonts({
 
 			})
 	]);
 	return gulp.src('./assets/sass/*.sass')
-			.pipe(sass({includePaths: bourbon.includePaths}))
+			.pipe(sass({includePaths: bourbon.includePaths}).on("error", notify.onError()))
 			.pipe(media())
 			.pipe(postcss(processor))
 			.pipe(gulp.dest('./assets/css'))
@@ -41,7 +43,7 @@ gulp.task('jade', function buildHTML() {
 	return gulp.src('assets/*.pug')
 			.pipe(jade({
 				pretty: true
-			}))
+			}).on("error", notify.onError()))
 			.pipe(gulp.dest('assets'))
 			.pipe(browserSync.reload({stream: true}));
 });
