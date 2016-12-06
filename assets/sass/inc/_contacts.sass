@@ -1,7 +1,6 @@
 .contacts
 	+container()
-	+border-big()
-	&__title
+	&__title-section
 		text-align: center
 
 	&__top
@@ -22,12 +21,20 @@
 			width: 120px
 		&_circle
 			border-radius: 100%
-
 	&__caption
 		&_big
 			max-width: 500px
 		&_small
 			max-width: 300px
-	&__name
-
-	&__sliders
+	&__slide-title
+		&_m
+			margin:
+				top: $distance-small
+				bottom: $distance-small / 3
+	&__slide-subtitle
+		&_m
+			margin-bottom: $distance-small / 2
+	&__slide-description
+		&_grey-i
+			color: $secondary-text-color
+			font-style: italic
