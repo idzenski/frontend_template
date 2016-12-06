@@ -1,0 +1,32 @@
+.services
+  +container()
+  text-align: center
+  margin: $distance-middle auto
+  &__undertitle
+    color: $secondary-text-color
+  &__grid
+    +grid()
+  &__card
+    +col-xs(4)
+    +col-lg(4)
+    +col-md(4)
+    +col-sm(12)
+    +col-xs (12)
+    padding: $distance-small
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
+    transition: box-shadow .25s
+    margin-top: $distance-small
+    &:hover
+      box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+      .services__icon
+        color: $primary-color-dark
+      .pill_dark
+        background: $primary-color-dark
+  &__icon
+    margin-bottom: $distance-middle
+    transition: $transition3
+  &__cardtext
+    color: $secondary-text-color
+    font-size: 14px
+    line-height: 1.426em
+    margin-bottom: $distance-small
