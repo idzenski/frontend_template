@@ -1,3 +1,33 @@
 .button
 	&_bd-rs
 		border-radius: 50%
+.pill
+	border-radius: 100px
+	transition: $transition3
+	text-transform: uppercase
+	font-weight: 500
+	letter-spacing: .5px
+	&_dark
+		background: $primary-text-color
+		color: $primary-color-text
+		&:hover
+			background: $primary-color-dark
+	&_transparent
+		background: transparent
+		color: $primary-color
+		border: 1px solid
+		&:hover
+			color: $primary-color-text
+			background: $primary-color
+			border-color: $primary-color
+	&_accent
+		background: $primary-color
+		color: $primary-color-text
+		&:hover
+			background: $primary-color-dark
+	&_small
+		padding: 4px 18px
+	&_big
+		padding: 8px 36px
+	&_margin
+		margin-top: $distance-small
