@@ -1,6 +1,25 @@
 .card
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)
-  transition: box-shadow .25s
+  transition: all .25s
   border-radius: 2px
   &_padding
     padding: $distance-small
+  &_image
+    border-radius: 2px 2px 0 0
+    max-width: 100%
+  &_content
+    border-radius: 0 0 2px 2px
+    padding: 20px
+  &_title
+    font-weight: 700
+    font-size: 18px
+    line-height: 2em
+    color: $primary-text-color
+  &_subtitle
+    color: $secondary-text-color
+    font-weight: 14px
+  &_hoverable:hover
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)
+  &_hovertitle:hover
+    .card_title
+      color: $primary-color
