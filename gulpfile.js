@@ -7,7 +7,7 @@ let browserSync   = require('browser-sync'),
 		short         = require('postcss-short'),
 		fonts         = require('postcss-font-magician'),
 
-		jade					= require('gulp-jade'),
+		jade          = require('gulp-jade'),
 		media         = require('gulp-group-css-media-queries'),
 		sass          = require('gulp-sass'),
 		notify        = require('gulp-notify'),
