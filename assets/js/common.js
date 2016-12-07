@@ -1,4 +1,4 @@
-$('.contacts__top').slick({
+$('.team__top').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	autoplay: true,
@@ -6,12 +6,12 @@ $('.contacts__top').slick({
 	autoplaySpeed: 5000,
 	arrows: false,
 	fade: true,
-	asNavFor: '.contacts__sliders'
+	asNavFor: '.team__sliders'
 });
-$('.contacts__sliders').slick({
+$('.team__sliders').slick({
 	slidesToShow: 4,
 	slidesToScroll: 1,
-	asNavFor: '.contacts__top',
+	asNavFor: '.team__top',
 	focusOnSelect: true,
 	responsive: [
 		{
