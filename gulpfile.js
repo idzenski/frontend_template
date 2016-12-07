@@ -24,7 +24,7 @@ gulp.task('browserSync', function () {
 
 gulp.task('postcss', function () {
 	const processor = ([
-			autoprefixer({browsers: ['last 10 version']}),
+			//autoprefixer({browsers: ['last 10 version']}),
 			cssnano(),
 			short(),
 			fonts({
